@@ -8,19 +8,46 @@
 		<span translate="sellers.Add" />
 	</button>
 
-	<table>
+	<form>
+		<div class="form-group">
+			<div class="input-group">
+				<div class="input-group-addon"><i class="fa fa-search"></i></div>
+				<input type="text" class="form-control" placeholder="Search sellers" ng-model="searchSellers">
+			</div>
+		</div>
+	</form>
+	
+	<table class="table table-bordered table-striped">
+		
 		<thead>
 			<tr>
-				<th translate="sellers.Name"></th>
-				<th translate="sellers.Category"></th>
+				<td>
+					<a href="" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+						<span translate="sellers.Name"></span>
+						<span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
+						<span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+					</a>
+				</td>
+				<td>
+					<a href="" ng-click="sortType = 'category'; sortReverse = !sortReverse">
+						<span translate="sellers.Category"></span>
+						<span ng-show="sortType == 'category' && !sortReverse" class="fa fa-caret-down"></span>
+						<span ng-show="sortType == 'category' && sortReverse" class="fa fa-caret-up"></span>
+					</a>
+				</td>
+				<td></td>
 			</tr>
 		</thead>
+		
 		<tbody>
-			<tr ng-repeat="s in sellers">
-				<td>{{s.name}}</td>
-				<td>{{s.category}}</td>
+			<tr ng-repeat="s in sellers | orderBy:sortType:sortReverse | filter:searchSellers">
+				<td>{{ s.name }}</td>
+				<td>{{ s.category }}</td>
+				<td>
+					<button translate="sellers.Edit" class="btn btn-sm" ng-click="onUpdateSeller(s.id)"></button>
+				</td>
 			</tr>
 		</tbody>
-		<tr></tr>
+		
 	</table>
 </div>
