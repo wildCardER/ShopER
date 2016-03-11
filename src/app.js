@@ -6,7 +6,7 @@ angular.module("project3App", ["ngRoute", "ui.bootstrap", "sharedServices", "pas
 		controller: "SellersController",
 		templateUrl: "components/sellers/index.html"
 	});
-
+	
 	$translateProvider.useStaticFilesLoader({
 		prefix: "lang_",
 		suffix: ".json"
