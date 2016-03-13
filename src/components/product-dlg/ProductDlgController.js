@@ -12,6 +12,7 @@ angular.module("project3App").controller("ProductDlgController",
 			quantityInStock: "0",
 			imagePath: ""
 		};
+		/*
 		if (param) {
 			AppResource.getSellerProducts(param).success(function(product) {
 				$scope.product = product;
@@ -19,14 +20,13 @@ angular.module("project3App").controller("ProductDlgController",
 				// TODO: error handler, failed to load seller info
 				console.log("No products available");
 			});
-		}
+		}*/
 
 		$scope.onOk = function onOk() {
 			// todo: validation
 			$scope.submitForm = function(isValid){
 				if(isValid){
 					$scope.$close($scope.product);
-					console.log("Form Submitted");
 				}
 				else{
 					console.log("Form is not valid");
