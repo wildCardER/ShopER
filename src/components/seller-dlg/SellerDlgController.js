@@ -2,6 +2,9 @@
 
 angular.module("project3App").controller("SellerDlgController",
 	function SellerDlgController($scope, param, AppResource) {
+		
+
+
 		$scope.seller = {
 			name: "",
 			category: "",
@@ -17,7 +20,15 @@ angular.module("project3App").controller("SellerDlgController",
 
 		$scope.onOk = function onOk() {
 			// todo: validation
-			$scope.$close($scope.seller);
+			$scope.submitForm = function(isValid){
+				if(isValid){
+					$scope.$close($scope.seller);
+					console.log(" form Submitted");
+				}
+				else{
+					console.log("Form is not valid");
+				}
+			};
 		};
 
 		$scope.onCancel = function onCancel() {
