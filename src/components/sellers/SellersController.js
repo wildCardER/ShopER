@@ -2,10 +2,6 @@
 
 angular.module("project3App").controller("SellersController",
 function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
-	// TODO: load data from AppResource! Also, add other methods, such as to
-	// add/update sellers etc.
-	$scope.sortType = 'name'; // set the default sort type
-	$scope.sortReverse = false;  // set the default sort order
 	$scope.searchSellers = '';     // set the default search/filter term
 
 	$scope.isLoading = true;

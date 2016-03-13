@@ -138,7 +138,6 @@ function AppResource() {
 					break;
 				}
 			}
-			console.log(seller);
 
 			if (seller) {
 				return mockHttpPromise(mockResource.successLoadSellerDetails, seller);
