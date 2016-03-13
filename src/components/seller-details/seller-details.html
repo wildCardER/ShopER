@@ -1,3 +1,56 @@
-<div>
-	{{ seller.name }}
-</div>
+<div class="well well-lg">
+ <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{{ seller.name }}
+                    <small>{{ seller.category }}</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src="{{ seller.imagePath}}" width="750" height="500" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>{{ seller.name }}</h3>
+                
+                <h3>{{ seller.category }}</h3>
+                
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Projects</h3>
+            </div>
+            <div ng-controller="ProductsController as product">
+              <ul>
+                <li ng-repeat="p in product.$scope.products">
+                  <er-card productInfo="p"></er-card>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>

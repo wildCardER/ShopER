@@ -1,9 +1,9 @@
 "use strict";
 
 angular.module("project3App").controller("ProductsController",
-function ProductsController($scope, AppResource, param) {
+function ProductsController($scope, AppResource, $routeParams) {
 
-	AppResource.getSellerProducts(param).success(function(product){
+	AppResource.getSellerProducts($routeParams.id).success(function(product){
 		$scope.products = product;
 	}).error(function(){
 		console.log("No products to display");
@@ -15,6 +15,6 @@ function ProductsController($scope, AppResource, param) {
 			scope: {
 				productInfo: '=product'
 			},
-			templateUrl: "productTemplate.html"
+			templateUrl: "components/product/productTemplate.html"
 		};
 });
