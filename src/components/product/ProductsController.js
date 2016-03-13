@@ -10,11 +10,11 @@ function ProductsController($scope, AppResource, $routeParams) {
 	});
 
 }).directive('erCard', function(){
-		return{
-			restrict: "E",
-			scope: {
-				productInfo: '=product'
-			},
-			templateUrl: "components/product/productTemplate.html"
-		};
+	return{
+		restrict: "E",
+		scope: {
+			productInfo: '=product'
+		},
+		templateUrl: "components/product/productTemplate.html"
+	};
 });
