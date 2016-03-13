@@ -1,8 +1,8 @@
 <div class="card">
-  <img class="card-img-top" data-src={{productInfo.imagePath}} alt="Card image cap">
+  <img class="card-img-top" ng-src="{{productInfo.imagePath}}" width="auto" height="250" alt="Card image cap">
   <div class="card-block">
     <h4 class="card-title">{{productInfo.name}}</h4>
     <p class="card-text">Price: {{productInfo.price}}</p>
-    <p class="card-text">Quantity: {{productInfo.quantity}}</p>
+    <p class="card-text">Quantity: {{productInfo.quantityInStock}}</p>
   </div>
 </div>
