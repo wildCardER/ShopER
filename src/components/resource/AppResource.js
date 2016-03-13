@@ -79,7 +79,7 @@ function AppResource() {
 					fn(data);
 				}
 				return {
-					error: function f() {
+					error: function (f) {
 						if (!condition) {
 							f();
 						}
@@ -138,6 +138,7 @@ function AppResource() {
 					break;
 				}
 			}
+			console.log(seller);
 
 			if (seller) {
 				return mockHttpPromise(mockResource.successLoadSellerDetails, seller);

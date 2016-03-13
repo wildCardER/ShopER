@@ -41,7 +41,7 @@
 		
 		<tbody>
 			<tr ng-repeat="s in sellers | orderBy:sortType:sortReverse | filter:searchSellers">
-				<td>{{ s.name }}</td>
+				<td><a ng-href="#/seller/{{s.id}}">{{ s.name }}</a></td>
 				<td>{{ s.category }}</td>
 				<td>
 					<button translate="sellers.Edit" class="btn btn-sm" ng-click="onUpdateSeller(s.id)"></button>
