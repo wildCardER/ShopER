@@ -1,0 +1,8 @@
+{
+	"products" : {
+		"Add":                     "Add Product",
+		"Products":					 "Available Products",
+		"all":						"All Products",
+		"top10":					"Top 10 Products"
+	}
+}
