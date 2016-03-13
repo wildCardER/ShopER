@@ -1,20 +1,23 @@
 "use strict";
 
-angular.module("project3App").controller("SellerDlgController",
-	function SellerDlgController($scope, param, AppResource) {
+angular.module("project3App").controller("ProductDlgController",
+	function ProductDlgController($scope, param, AppResource) {
 		
 
 
-		$scope.seller = {
+		$scope.product = {
 			name: "",
-			category: "",
+			price: "",
+			quantitySold: "0",
+			quantityInStock: "0",
 			imagePath: ""
 		};
 		if (param) {
-			AppResource.getSellerDetails(param).success(function(seller) {
-				$scope.seller = seller;
+			AppResource.getSellerProducts(param).success(function(product) {
+				$scope.product = product;
 			}).error(function() {
 				// TODO: error handler, failed to load seller info
+				console.log("No products available");
 			});
 		}
 
@@ -22,8 +25,8 @@ angular.module("project3App").controller("SellerDlgController",
 			// todo: validation
 			$scope.submitForm = function(isValid){
 				if(isValid){
-					$scope.$close($scope.seller);
-					console.log(" form Submitted");
+					$scope.$close($scope.product);
+					console.log("Form Submitted");
 				}
 				else{
 					console.log("Form is not valid");

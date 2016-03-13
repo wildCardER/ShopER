@@ -23,7 +23,7 @@ angular.module("project3App").controller("SellerDlgController",
 			$scope.submitForm = function(isValid){
 				if(isValid){
 					$scope.$close($scope.seller);
-					console.log(" form Submitted");
+					console.log("Form Submitted");
 				}
 				else{
 					console.log("Form is not valid");
