@@ -3,6 +3,13 @@
 		"Add":                     "Add Product",
 		"Products":					 "Available Products",
 		"all":						"All Products",
-		"top10":					"Top 10 Products"
+		"top10":					"Top 10 Products",
+		"Messages" : {
+			"LoadFailed":            "Failed to load the list of products",
+			"SaveSucceeded":         "The product has been added successfully",
+			"SaveFailed":            "Unfortunately we could not add a new product",
+			"UpdateSucceded":        "The product has been updated successfully",
+			"UpdateFailed":          "Unfortunately we could not update the product"
+		}
 	}
 }

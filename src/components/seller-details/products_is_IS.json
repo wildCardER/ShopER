@@ -3,6 +3,13 @@
 		"Add":                     "Bæta við vöru",
 		"Products":					 "Vörur",
 		"all":						"Allar Vörur",
-		"top10":					"Top 10 Vörur"
+		"top10":					"Top 10 Vörur",
+		"Messages" : {
+			"LoadFailed":            "Ekki tókst að sækja vörur",
+			"SaveSucceeded":         "Vara hefur verið vistuð",
+			"SaveFailed":            "Ekki tókst að vista vöru",
+			"UpdateSucceded":        "Vara hefur verið uppfærð",
+			"UpdateFailed":          "Ekki tókst að uppfæra vöru"
+		}
 	}
 }

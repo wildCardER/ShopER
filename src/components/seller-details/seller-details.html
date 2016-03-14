@@ -46,6 +46,7 @@
 				</uib-tab-heading>	
 					<div ng-repeat="p in products">
 						<div class="clearfix" ng-if="$index % 3 == 0"></div>
+						<hr ng-if="$index % 3 == 0"></hr>
 						<div class="col-sm-4">
 							<er-card product="p"></er-card>
 						</div>
@@ -57,6 +58,7 @@
 				</uib-tab-heading>
 					<div ng-repeat="p in products | orderBy:quantitySold | limitTo:10">
 						<div class="clearfix" ng-if="$index % 3 == 0"></div>
+						<hr ng-if="$index % 3 == 0"></hr>
 						<div class="col-sm-4">
 							<er-card product="p"></er-card>
 						</div>
