@@ -9,6 +9,18 @@ angular.module("project3App").factory("ProductDlg",
 					controller: "ProductDlgController",
 					resolve: {
 						param: function () {
+							return "";
+						}
+					}
+				});
+				return modalInstance.result;
+			},
+			showEdit: function(id) {
+				var modalInstance = $uibModal.open({
+					templateUrl: "components/product-dlg/product-dlg.html",
+					controller: "ProductDlgController",
+					resolve: {
+						param: function () {
 							return id;
 						}
 					}

@@ -1,8 +1,10 @@
 <div class="card">
-  <img class="card-img-top" ng-src="{{productInfo.imagePath}}" width="auto" height="250" alt="Card image cap">
+  <img ng-if="productInfo.imagePath" class="card-img-top" ng-src="{{productInfo.imagePath}}" width="150" height="auto" alt="Card image cap">
+  <img ng-if="!productInfo.imagePath" class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/300px-No_image_available.svg.png" width="150" height="auto" alt="Card image cap">
   <div class="card-block">
     <h4 class="card-title">{{productInfo.name}}</h4>
     <p class="card-text"><span translate="product.Price"></span> <strong>{{productInfo.price}}</strong></p>
     <p class="card-text"><strong>{{productInfo.quantityInStock}}</strong>  <span translate="product.Stock"></span></p>
+    <button ng-controller="SellerDetailsController" class="btn btn-sm btn-primary" ng-click="onEditProduct(productInfo.id)">Edit</button>
   </div>
 </div>

@@ -6,21 +6,22 @@ angular.module("project3App").controller("ProductDlgController",
 
 
 		$scope.product = {
+			id: "",
 			name: "",
 			price: "",
 			quantitySold: "0",
 			quantityInStock: "0",
 			imagePath: ""
 		};
-		/*
+		
 		if (param) {
-			AppResource.getSellerProducts(param).success(function(product) {
+			AppResource.getProduct(param).success(function(product) {
 				$scope.product = product;
 			}).error(function() {
 				// TODO: error handler, failed to load seller info
-				console.log("No products available");
+				console.log("Product not found");
 			});
-		}*/
+		}
 
 		$scope.onOk = function onOk() {
 			// todo: validation
