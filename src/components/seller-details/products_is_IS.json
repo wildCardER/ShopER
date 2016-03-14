@@ -3,6 +3,7 @@
 		"Add":                     "Bæta við vöru",
 		"Products":					 "Vörur",
 		"all":						"Allar Vörur",
+		"nothing":					"Engar vörur",
 		"top10":					"Top 10 Vörur",
 		"Messages" : {
 			"LoadFailed":            "Ekki tókst að sækja vörur",

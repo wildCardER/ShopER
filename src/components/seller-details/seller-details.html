@@ -30,8 +30,7 @@
 	<!-- /.row -->
 
 	<!-- Related Projects Row -->
-	<div class="row">
-
+	<div class="row" ng-if="products.length>0">
 		<div class="col-lg-12">
 			<h3 class="page-header">
 				<span translate="products.Products" />
@@ -67,3 +66,7 @@
 			</uib-tabset>
 		</div>
 	</div>
+	<div class="row" ng-if="products.length===0">
+		<uib-alert><h2 translate="products.nothing" class="text-center"></h2></uib-alert>
+	</div>
+</div>

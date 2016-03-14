@@ -3,6 +3,7 @@
 		"Add":                     "Add Product",
 		"Products":					 "Available Products",
 		"all":						"All Products",
+		"nothing":					"No products",
 		"top10":					"Top 10 Products",
 		"Messages" : {
 			"LoadFailed":            "Failed to load the list of products",
