@@ -1,0 +1,8 @@
+{
+	"sellerdlg" : {
+		"Name":                     "Name: ",
+		"Category":					 "Category: ",
+		"Image":					"Path to Image: ",
+		"Seller":					"Seller"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"sellerdlg" : {
+		"Name":                     "Nafn: ",
+		"Category":					 "Verð: ",
+		"Image":					"Slóð að mynd: ",
+		"Seller":					"Seljandi"
+	}
+}

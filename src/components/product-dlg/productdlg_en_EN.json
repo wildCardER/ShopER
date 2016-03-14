@@ -1,0 +1,8 @@
+{
+	"productdlg" : {
+		"Name":                     "Name: ",
+		"Price":					 "Price: ",
+		"Image":					"Path to Image: ",
+		"Product":					"Product"
+	}
+}

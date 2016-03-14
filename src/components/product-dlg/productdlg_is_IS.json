@@ -1,0 +1,8 @@
+{
+	"productdlg" : {
+		"Name":                     "Nafn: ",
+		"Price":					 "Verð: ",
+		"Image":					"Slóð að mynd: ",
+		"Product":					"Vara"
+	}
+}
