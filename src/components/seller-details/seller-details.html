@@ -45,9 +45,9 @@
 					<span translate="products.all"></span>
 				</uib-tab-heading>	
 					<div ng-repeat="p in products">
-						<div class="clearfix" ng-if="$index % 3 == 0"></div>
-						<hr ng-if="$index % 3 == 0"></hr>
-						<div class="col-sm-4">
+						<div class="clearfix" ng-if="$index % 4 == 0"></div>
+						<hr ng-if="$index % 4 == 0"></hr>
+						<div class="col-sm-3">
 							<er-card product="p"></er-card>
 						</div>
 					</div>
@@ -57,27 +57,13 @@
 					<span translate="products.top10"></span>
 				</uib-tab-heading>
 					<div ng-repeat="p in products | orderBy:quantitySold | limitTo:10">
-						<div class="clearfix" ng-if="$index % 3 == 0"></div>
-						<hr ng-if="$index % 3 == 0"></hr>
-						<div class="col-sm-4">
+						<div class="clearfix" ng-if="$index % 4 == 0"></div>
+						<hr ng-if="$index % 4 == 0"></hr>
+						<div class="col-sm-3">
 							<er-card product="p"></er-card>
 						</div>
 					</div>
 				</uib-tab>
 			</uib-tabset>
 		</div>
-
 	</div>
-	<!-- /.row -->
-
-	<hr>
-
-	<!-- Footer -->
-	<footer>
-		<div class="row">
-			<div class="col-lg-12">
-				<p>Copyright &copy; Your Website 2014</p>
-			</div>
-		</div>
-		<!-- /.row -->
-	</footer>

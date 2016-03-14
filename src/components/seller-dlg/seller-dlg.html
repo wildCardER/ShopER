@@ -1,35 +1,35 @@
-
 <form name="sellerForm" ng-submit="submitForm(sellerForm.$valid)" novalidate>
 	<div class="modal-header">
 		<h2 translate="sellerdlg.Seller"></h2>
 	</div>
-	<div class="modal-body">
+	<div class="modal-body ">
 		<div class="modal-description">
 			<div class="control-group">
-				<md-input-container class="form-group">
-					<label class="control-label" translate="sellerdlg.Name"></label>
+				<label class="control-label" translate="sellerdlg.Name"></label>
+				<div class="controls">
 					<input type="text" ng-model="seller.name" required ng-minlength="1" ng-maxlenght="50" />
-				</md-input-container>
+				</div>
 			</div>
 			<div class="control-group">
-				<md-input-container class="form-group">
-					<label class="control-label" translate="sellerdlg.Category"></label>
+				<label class="control-label" translate="sellerdlg.Category"></label>
+				<div class="controls">
 					<input type="text" ng-model="seller.category" required ng-minlength="1" ng-maxlength="100" />
-				</md-input-container>
+				</div>
 			</div>
 			<div class="control-group">
-				<md-input-container class="form-group">
-					<label class="control-label" translate="sellerdlg.Image"></label>
+				<label class="control-label" translate="sellerdlg.Image"></label>
+				<div class="controls">
 					<input type="text" ng-model="seller.imagePath" required />
-				</md-input-container>
+				</div>
 			</div>
-			<br/>
-			<div class="modal-footer">
-				<button class="btn btn-primary" ng-click="onOk()">Ok</button>
-				<button class="btn btn-primary" ng-click="onCancel()">Cancel</button>
+
+			<br>
+			<div class="modal-result">
 			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary" ng-click="onOk()">Ok</button>
+			<button type="button" class="btn btn-primary" ng-click="onCancel()">Cancel</button>
 		</div>
 	</div>
 </form>
-
-	

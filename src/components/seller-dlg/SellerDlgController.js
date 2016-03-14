@@ -3,7 +3,7 @@
 angular.module("project3App").controller("SellerDlgController",
 	function SellerDlgController($scope, param, AppResource) {
 		
-
+		var databaseSeller;
 
 		$scope.seller = {
 			name: "",
@@ -12,7 +12,8 @@ angular.module("project3App").controller("SellerDlgController",
 		};
 		if (param) {
 			AppResource.getSellerDetails(param).success(function(seller) {
-				$scope.seller = seller;
+				$scope.seller = angular.copy(seller);
+				databaseSeller = seller;
 			}).error(function() {
 				// TODO: error handler, failed to load seller info
 			});
@@ -22,7 +23,8 @@ angular.module("project3App").controller("SellerDlgController",
 			// todo: validation
 			$scope.submitForm = function(isValid){
 				if(isValid){
-					$scope.$close($scope.seller);
+					databaseSeller = $scope.seller;
+					$scope.$close(databaseSeller);
 					console.log("Form Submitted");
 				}
 				else{

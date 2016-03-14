@@ -9,7 +9,7 @@
 			"LoadFailed":            "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded":         "Nýjum seljanda hefur verið bætt við",
 			"SaveFailed":            "Því miður tókst ekki að bæta við nýjum seljanda",
-			"UpdateSucceded":        "Búið að uppfæra seljanda",
+			"UpdateSucceeded":        "Búið að uppfæra seljanda",
 			"UpdateFailed":          "Því miður tókst ekki að uppfæra seljanda"
 		}
 	}

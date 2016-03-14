@@ -3,39 +3,34 @@
 	<div class="modal-header">
 		<h2 translate="productdlg.Product"></h2>
 	</div>
-	<div class="modal-body">
+	<div class="modal-body ">
 		<div class="modal-description">
 			<div class="control-group">
-				<md-input-container>
-					<label class="control-label" translate="productdlg.Name"> </label>
-					<div class="controls">
-						<input type="text" ng-model="product.name" required ng-minlength="1" ng-maxlenght="50" />
-					</div>
-				</md-input-container>
+				<label translate="productdlg.Name" class="control-label"></label>
+				<div class="controls">
+					<input type="text" ng-model="product.name" required ng-minlength="1" ng-maxlenght="50" />
+				</div>
 			</div>
 			<div class="control-group">
-				<md-input-container class="form-group">
-					<label class="control-label" translate="productdlg.Price"></label>
-					<div class="controls">
-						<input type="text" ng-model="product.price" required ng-minlength="1" ng-maxlength="100" />
-					</div>
-				</md-input-container>
+				<label translate="productdlg.Price" class="control-label"></label>
+				<div class="controls">
+					<input type="text" ng-model="product.price" required ng-minlength="1" ng-maxlength="100" />
+				</div>
 			</div>
 			<div class="control-group">
-				<md-input-container class="form-group">
-					<label class="control-label" translate="productdlg.Image"></label>
-					<div class="controls">
-						<input type="text" ng-model="product.imagePath" />
-					</div>
-				</md-input-container>
+				<label translate="productdlg.Image" class="control-label"></label>
+				<div class="controls">
+					<input type="text" ng-model="product.imagePath" />
+				</div>
 			</div>
-			<br/>
-			<div class="modal-footer">
-				<md-input-container>
-					<button class="btn btn-primary" ng-click="onOk()">Ok</button>
-					<button class="btn btn-primary" ng-click="onCancel()">Cancel</button>
-				</md-input-container>
+
+			<br>
+			<div class="modal-result">
 			</div>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary" ng-click="onOk()">Ok</button>
+			<button class="btn btn-primary" ng-click="onCancel()">Cancel</button>
 		</div>
 	</div>
 </form>
